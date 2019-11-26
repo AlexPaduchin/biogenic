@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/mendeleev_table/static/css/main.fc3dd8a5.chunk.css",
-    "main.js": "/mendeleev_table/static/js/main.193a178d.chunk.js",
-    "runtime-main.js": "/mendeleev_table/static/js/runtime-main.f559cb85.js",
-    "static/js/2.dc60ef84.chunk.js": "/mendeleev_table/static/js/2.dc60ef84.chunk.js",
-    "index.html": "/mendeleev_table/index.html",
-    "precache-manifest.e37ebd2765315b8e02d47110d5784c7f.js": "/mendeleev_table/precache-manifest.e37ebd2765315b8e02d47110d5784c7f.js",
-    "service-worker.js": "/mendeleev_table/service-worker.js"
+    "main.css": "/biogenic/static/css/main.fc3dd8a5.chunk.css",
+    "main.js": "/biogenic/static/js/main.fa355457.chunk.js",
+    "runtime-main.js": "/biogenic/static/js/runtime-main.126e0cd2.js",
+    "static/js/2.d489e33b.chunk.js": "/biogenic/static/js/2.d489e33b.chunk.js",
+    "index.html": "/biogenic/index.html",
+    "precache-manifest.d37fa58889f2cb0fa0ee96d145bdc805.js": "/biogenic/precache-manifest.d37fa58889f2cb0fa0ee96d145bdc805.js",
+    "service-worker.js": "/biogenic/service-worker.js"
   },
   "entrypoints": [
-    "static/js/runtime-main.f559cb85.js",
-    "static/js/2.dc60ef84.chunk.js",
+    "static/js/runtime-main.126e0cd2.js",
+    "static/js/2.d489e33b.chunk.js",
     "static/css/main.fc3dd8a5.chunk.css",
-    "static/js/main.193a178d.chunk.js"
+    "static/js/main.fa355457.chunk.js"
   ]
 }
