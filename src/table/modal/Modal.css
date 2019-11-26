@@ -1,0 +1,82 @@
+.popup__full_screen_div {
+  background-color: transparent;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 20;
+}
+
+.popup__full_screen_div_opacity {
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.popup__window {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: grey 0px 13px 26px 0px;
+  padding: 10px 25px 10px 20px;
+  position: relative;
+  width: calc(var(--width) * 8);
+  box-shadow: black 0px 13px 26px 0px;
+}
+
+.popup__list {
+  max-height: 500px;
+  overflow-y: scroll;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.popup__cancel {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.popup__title {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 0 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.modalButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modalElementsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalElements {
+  height: calc(var(--height) * 2);
+  width: calc(var(--width) * 3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

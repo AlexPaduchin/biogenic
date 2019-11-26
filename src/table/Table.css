@@ -1,0 +1,159 @@
+:root {
+  --height: 3rem;
+  --cell-width: 4.5rem;
+  --cell-width-header1: 3rem;
+  --max-table-width: calc(
+    var(--cell-width) * 14 + var(--cell-width-header1)
+  );
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+table,
+th,
+td {
+  height: var(--height);
+  border: 1px solid black;
+}
+
+.mainDiv {
+  width: 100%;
+}
+@media screen and (min-width: 64rem) {
+  .mainDiv {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    overflow-x: scroll;
+  }
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-height: 45rem) {
+  .main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    overflow-y: scroll;
+  }
+}
+
+.rowPeriods,
+.header4,
+.header {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.titleClass {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.header {
+  width: var(--cell-width);
+}
+
+.header4 {
+  width: calc(var(--cell-width) * 4);
+}
+
+.header0 {
+  width: var(--cell-width);
+}
+.header1 {
+  width: var(--cell-width-header1);
+}
+
+.cellWidth {
+  width: var(--cell-width);
+  padding: 3px;
+}
+.cellWidth3 {
+  width: calc(var(--cell-width) * 3);
+}
+.cellWidth4 {
+  width: calc(var(--cell-width) * 4);
+}
+
+.rowPeriods,
+.header0,
+.header,
+.titleClass,
+.infoMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bColorRed {
+  background-color: #ee7637;
+}
+
+.bColorYellow {
+  background-color: #fedcae;
+}
+
+.bColorGreen {
+  background-color: #3dadc1;
+}
+
+.titleColor {
+  background-color: #fedcae;
+}
+
+.bColorNoColor,
+.bColorRed,
+.bColorYellow,
+.bColorGreen {
+  cursor: pointer;
+  height: 100%;
+}
+
+.cellKeyAndNum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cellFlexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cellFlexEnd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cellFlexStart,
+.cellFlexEnd,
+.cellNum {
+  font-size: 0.6rem;
+}
+
+.cellKey {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.opacity {
+  opacity: 0.4;
+}
+
+.infoMessage {
+  padding: 8px 0 8px 2px;
+  background-color: #fedcae;
+  max-width: var(--max-table-width);
+  width: 100%;
+}
