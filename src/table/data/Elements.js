@@ -1,6 +1,6 @@
 import React from 'react';
 
-import H from './H';
+import H from './H/H';
 
 const elements = {
 	H: {
