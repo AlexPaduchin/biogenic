@@ -1,12 +1,14 @@
 import React from 'react';
 
+import H from './H';
+
 const elements = {
 	H: {
 		color: 'Red',
 		num: 1,
 		weight: 1.00797,
 		name: 'Водород',
-		description: () => (<div>Описание элемента dsfdsfdsf sdfsdf sdf sdf sdfsdfводород</div>)
+		description: H
 	},
 	He: {
 		color: 'Red',
