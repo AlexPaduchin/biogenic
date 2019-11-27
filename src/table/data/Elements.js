@@ -1,6 +1,7 @@
 import React from 'react';
 
 import H from './H/H';
+import C from './C/C';
 
 const elements = {
 	H: {
@@ -15,15 +16,12 @@ const elements = {
 		num: 2,
 		weight: 4.0026,
 		name: 'Гелий',
-		description: () => (<div>Описание элемента Гелий</div>)
-
 	},
 	Li: {
 		num: 3,
 		color: 'Red',
 		weight: 6.939,
 		name: 'Литий',
-		description: () => (<div>Описание элемента Литий</div>)
 
 	},
 	Be: {
@@ -31,7 +29,6 @@ const elements = {
 		color: 'Red',
 		weight: 9.0122,
 		name: 'Бериллий',
-		description: () => (<div>Описание элемента Бериллий</div>)
 
 	},
 	B: {
@@ -45,6 +42,7 @@ const elements = {
 		color: 'Yellow',
 		weight: 12.01115,
 		name: 'Углерод',
+		description: C
 	},
 	N: {
 		num: 7,
