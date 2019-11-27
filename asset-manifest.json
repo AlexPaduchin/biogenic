@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/biogenic/static/css/main.eefd7524.chunk.css",
-    "main.js": "/biogenic/static/js/main.1588319c.chunk.js",
+    "main.css": "/biogenic/static/css/main.2e1c6665.chunk.css",
+    "main.js": "/biogenic/static/js/main.6dd83903.chunk.js",
     "runtime-main.js": "/biogenic/static/js/runtime-main.126e0cd2.js",
-    "static/js/2.50f0ab98.chunk.js": "/biogenic/static/js/2.50f0ab98.chunk.js",
+    "static/js/2.4a77c6d2.chunk.js": "/biogenic/static/js/2.4a77c6d2.chunk.js",
     "index.html": "/biogenic/index.html",
-    "precache-manifest.dcf4a20f6c2d0f7195157fa519eaa095.js": "/biogenic/precache-manifest.dcf4a20f6c2d0f7195157fa519eaa095.js",
+    "precache-manifest.34a3239b833508706dc801280dc4014b.js": "/biogenic/precache-manifest.34a3239b833508706dc801280dc4014b.js",
     "service-worker.js": "/biogenic/service-worker.js",
     "static/media/image1.png": "/biogenic/static/media/image1.30d611e7.png",
-    "static/media/image2.png": "/biogenic/static/media/image2.3b807dd1.png"
+    "static/media/image1C.png": "/biogenic/static/media/image1C.7fd289fd.png",
+    "static/media/image2.png": "/biogenic/static/media/image2.3b807dd1.png",
+    "static/media/image2C.png": "/biogenic/static/media/image2C.e42eb70b.png",
+    "static/media/image3C.png": "/biogenic/static/media/image3C.39bcd792.png"
   },
   "entrypoints": [
     "static/js/runtime-main.126e0cd2.js",
-    "static/js/2.50f0ab98.chunk.js",
-    "static/css/main.eefd7524.chunk.css",
-    "static/js/main.1588319c.chunk.js"
+    "static/js/2.4a77c6d2.chunk.js",
+    "static/css/main.2e1c6665.chunk.css",
+    "static/js/main.6dd83903.chunk.js"
   ]
 }
