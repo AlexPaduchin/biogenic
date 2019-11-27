@@ -66,10 +66,17 @@
   align-items: center;
 }
 
-.modalButton {
+.modalButtonContainer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+.modalButton {
+  padding: 10px;
+  background-color: #3dadc1;
+  color: white;
+  border-radius: 5px;
+  box-shadow: var(--shadow-color) 0px 13px 26px 0px;
 }
 
 .modalElementsDiv {

@@ -30,8 +30,8 @@ function Modal(props) {
 					<div className="popup__list">
 						<Description />
 					</div>
-					<div className="modalButton">
-						<button>Закрыть</button>
+					<div className="modalButtonContainer">
+						<button className="modalButton">Закрыть</button>
 					</div>
 				</div>
 			</div>

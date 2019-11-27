@@ -98,16 +98,13 @@ td {
   background-color: #ee7637;
 }
 
+.titleColor,
 .bColorYellow {
   background-color: #fedcae;
 }
 
 .bColorGreen {
   background-color: #3dadc1;
-}
-
-.titleColor {
-  background-color: #fedcae;
 }
 
 .bColorNoColor,
