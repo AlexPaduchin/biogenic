@@ -144,8 +144,17 @@ td {
   font-weight: 700;
 }
 
-.opacity {
-  opacity: 0.4;
+.relativePosition {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.shadow {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  box-shadow: black 0px 13px 26px 0px;
 }
 
 .infoMessage {

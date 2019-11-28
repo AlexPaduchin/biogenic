@@ -27,7 +27,6 @@
 .popup__window {
   background-color: white;
   border-radius: 5px;
-  box-shadow: grey 0px 13px 26px 0px;
   padding: 10px 25px 10px 20px;
   position: relative;
   width: calc(var(--max-table-width) - 200px);
@@ -76,7 +75,7 @@
   background-color: #3dadc1;
   color: white;
   border-radius: 5px;
-  box-shadow: var(--shadow-color) 0px 13px 26px 0px;
+  box-shadow: black 0px 13px 26px 0px;
 }
 
 .modalElementsDiv {

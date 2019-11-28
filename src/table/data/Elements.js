@@ -49,6 +49,7 @@ const elements = {
 		color: 'Yellow',
 		weight: 14.0067,
 		name: 'Азот',
+		description: () => <div>111</div>
 	},
 	O: {
 		num: 8,
