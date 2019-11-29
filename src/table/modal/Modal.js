@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Elements from '../data/Elements';
+import Cell from '../Cell';
 
 import './Modal.css';
 
@@ -23,6 +24,21 @@ function Modal(props) {
 			<div className="popup__full_screen_div_opacity" />
 			<div className="popup__full_screen_div">
 				<div className="popup__window">
+					<div>
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<Cell
+											setClickedElement={() => { }}
+											clickedElement={clickedElement}
+											elem={clickedElement}
+										/>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
 					<div className="popup__title">Информация:</div>
 

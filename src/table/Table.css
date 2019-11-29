@@ -150,11 +150,11 @@ td {
   width: 100%;
 }
 
-.shadow {
+.cellShadow {
   position: absolute;
   top: -5px;
   left: -5px;
-  box-shadow: black 0px 13px 26px 0px;
+  box-shadow: black 0px 13px 13px 5px;
 }
 
 .infoMessage {

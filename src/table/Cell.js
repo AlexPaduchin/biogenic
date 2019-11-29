@@ -11,9 +11,6 @@ const Cell = ({
 	return useMemo(() => {
 		const elemInfo = Elements[elem] || {};
 		const color = elemInfo.color ? ' bColor' + elemInfo.color : '';
-		const shadow = elemInfo.description === undefined
-			? ''
-			: 'shadow';
 
 		return (
 			<div
@@ -22,7 +19,7 @@ const Cell = ({
 					setClickedElement(elem);
 				}}
 			>
-				<div className={shadow}>
+				<div className={elemInfo.description !== undefined && 'cellShadow'}>
 					<div className={color}
 					>
 						{elemInfo.color === 'Green' ? (
