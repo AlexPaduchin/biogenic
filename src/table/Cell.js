@@ -19,7 +19,7 @@ const Cell = ({
 					setClickedElement(elem);
 				}}
 			>
-				<div className={elemInfo.description !== undefined && 'cellShadow'}>
+				<div className={elemInfo.description !== undefined ? 'cellShadow' : ''}>
 					<div className={color}
 					>
 						{elemInfo.color === 'Green' ? (

@@ -24,7 +24,7 @@ function Modal(props) {
 			<div className="popup__full_screen_div_opacity" />
 			<div className="popup__full_screen_div">
 				<div className="popup__window">
-					<div>
+					{/* <div>
 						<table>
 							<tbody>
 								<tr>
@@ -38,7 +38,7 @@ function Modal(props) {
 								</tr>
 							</tbody>
 						</table>
-					</div>
+					</div> */}
 
 					<div className="popup__title">Информация:</div>
 
