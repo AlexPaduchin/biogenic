@@ -371,7 +371,11 @@ function Table() {
 						</tr>
 						<tr>
 							<th colSpan={13} className="titleColor">
-								<div className="infoMessage">(Текст)</div>
+								<div className="infoMessage">
+									Выполнили ученики 9 “А” класса
+									Падучин Александр 10 “Б” класса
+									Исбендиярова Севиндж
+								</div>
 							</th>
 						</tr>
 					</tbody>
