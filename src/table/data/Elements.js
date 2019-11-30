@@ -2,6 +2,7 @@ import React from 'react';
 
 import H from './H/H';
 import C from './C/C';
+import N from './N/N';
 
 const elements = {
 	H: {
@@ -49,7 +50,7 @@ const elements = {
 		color: 'Yellow',
 		weight: 14.0067,
 		name: 'Азот',
-		description: () => <div>111</div>
+		description: N
 	},
 	O: {
 		num: 8,
