@@ -2,7 +2,7 @@
   "name": "biogenic",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexpaduchin.github.io/biogenic/",
+  "homepage": "https://alexanderpaduchin.github.io/biogenic/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.12.0",

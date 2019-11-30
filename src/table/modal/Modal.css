@@ -36,6 +36,13 @@
   text-justify: inter-word;
   text-indent: 40px;
   line-height: 1.2rem;
+  width: 90%;
+}
+
+@media screen and (min-width: 64rem) {
+  .popup__window {
+    width: calc(var(--max-table-width) - 200px) !important;
+  }
 }
 
 .popup__list {

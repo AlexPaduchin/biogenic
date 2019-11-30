@@ -34,6 +34,7 @@ td {
   height: 100%;
   width: 100%;
 }
+
 @media screen and (min-height: 45rem) {
   .main {
     height: 100vh;
