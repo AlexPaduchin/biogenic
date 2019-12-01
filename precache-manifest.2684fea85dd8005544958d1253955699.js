@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f3ffd97ac3b024f82deeea3b4262c936",
+    "revision": "5f6516a067b1989c6994315dfadd9f4b",
     "url": "/biogenic/index.html"
   },
   {
-    "revision": "69d2a4697fe5eddb78ec",
-    "url": "/biogenic/static/css/main.95c1a658.chunk.css"
+    "revision": "d062ce5481bd94bd5c84",
+    "url": "/biogenic/static/css/main.cb866412.chunk.css"
   },
   {
     "revision": "7b3ac002c21f2a37d4a7",
     "url": "/biogenic/static/js/2.6714eee9.chunk.js"
   },
   {
-    "revision": "69d2a4697fe5eddb78ec",
-    "url": "/biogenic/static/js/main.8cefd51f.chunk.js"
+    "revision": "d062ce5481bd94bd5c84",
+    "url": "/biogenic/static/js/main.7445a662.chunk.js"
   },
   {
     "revision": "83396f9bdbf72c483fb0",
