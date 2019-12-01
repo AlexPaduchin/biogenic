@@ -153,9 +153,9 @@ td {
 
 .cellShadow {
   position: absolute;
-  top: -5px;
-  left: -5px;
-  box-shadow: black 0px 13px 13px 5px;
+  top: -4px;
+  left: -4px;
+  box-shadow: 14px 14px 28px black, 3px 10px 10px black;
 }
 
 .infoMessage {

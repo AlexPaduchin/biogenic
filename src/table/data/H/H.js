@@ -32,7 +32,7 @@ const H = () => (
       Ведущую роль водородная связь играет в свойствах воды как растворителя и реагента.
       `}
       <div>
-        <img src={image2} alt="image2" height={400} style={{ padding: 40 }} />
+        <img src={image2} alt="image2" height={200} style={{ padding: 40 }} />
       </div>
       <div>
         {`
