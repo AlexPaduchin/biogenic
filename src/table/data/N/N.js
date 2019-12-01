@@ -6,7 +6,6 @@ import image4 from './imageN4.png'
 import image5 from './imageN5.png'
 const N = () => (
   <div>
-    <h1>Азот</h1>
     <div>
       {`
 Это элемент 2 периода V A группы.Электронная конфигурация атома азота `}<b>1s<sup>2</sup>2s<sup>2</sup>2p<sup>3</sup></b>{`.

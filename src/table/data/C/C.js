@@ -6,7 +6,6 @@ import image3C from './image3C.png'
 
 const C = () => (
   <div>
-    <h1>Углерод</h1>
     <div>
       {`
     Углерод – химический элемент 2 периода IV Aгруппы.
@@ -39,7 +38,7 @@ const C = () => (
      постоянство pH крови на уровне 7,40 ± 0,05.
       `}
       <div>
-        <img src={image2C} alt="image2" height={400} style={{ padding: 40 }} />
+        <img src={image2C} alt="image2" height={200} style={{ padding: 40 }} />
       </div>
       <div>
         {`
@@ -59,7 +58,7 @@ const C = () => (
       `}
       </div>
       <div>
-        <img src={image3C} alt="image3" height={400} style={{ padding: 40 }} />
+        <img src={image3C} alt="image3" height={200} style={{ padding: 40 }} />
       </div>
       <div>
         {`

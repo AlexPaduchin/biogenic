@@ -10,7 +10,10 @@ const elements = {
 		num: 1,
 		weight: 1.00797,
 		name: 'Водород',
-		description: H
+		description: H,
+		earthMassFraction: '1',
+		humanBodyMassFraction: '9.7',
+		classification: 'Органоген, s –элемент, неметалл'
 	},
 	He: {
 		color: 'Red',
@@ -43,21 +46,30 @@ const elements = {
 		color: 'Yellow',
 		weight: 12.01115,
 		name: 'Углерод',
-		description: C
+		description: C,
+		earthMassFraction: '0.15',
+		humanBodyMassFraction: '21',
+		classification: 'Органоген, p-элемент, неметалл',
 	},
 	N: {
 		num: 7,
 		color: 'Yellow',
 		weight: 14.0067,
 		name: 'Азот',
-		description: N
+		description: N,
+		earthMassFraction: '0,02',
+		humanBodyMassFraction: '3,1',
+		classification: 'Органоген, p-элемент, неметалл',
 	},
 	O: {
 		num: 8,
 		color: 'Yellow',
 		weight: 15.9994,
 		name: 'Кислород',
-		description: () => <div></div>
+		description: () => <div></div>,
+		earthMassFraction: '49',
+		humanBodyMassFraction: '67-75',
+		classification: 'Органоген, p-элемент, неметалл'
 	},
 	F: {
 		num: 9,
@@ -77,7 +89,10 @@ const elements = {
 		color: 'Red',
 		weight: 22.9898,
 		name: 'Натрий',
-		description: () => <div></div>
+		description: () => <div></div>,
+		earthMassFraction: '2,6',
+		humanBodyMassFraction: '0,1',
+		classification: 's - элемент, создающий электролитную среду в крови, клеточных и межклеточных жидкостях, металл'
 	},
 	Mg: {
 		num: 12,
@@ -169,7 +184,10 @@ const elements = {
 		color: 'Green',
 		weight: 55.847,
 		name: 'Железо',
-		description: () => <div></div>
+		description: () => <div></div>,
+		earthMassFraction: '5',
+		humanBodyMassFraction: '0,01',
+		classification: 'Микроэлемент, d-элемент, входящий в структуру белка гемоглобина и в активные центры ферментов, необходимые для регулирования многих биохимических реакций, металл'
 	},
 	Co: {
 		num: 27,
@@ -194,6 +212,10 @@ const elements = {
 		color: 'Green',
 		weight: 65.39,
 		name: 'Цинк',
+		description: () => <div></div>,
+		earthMassFraction: '5 ∙ 10-3',
+		humanBodyMassFraction: '1∙10-3',
+		classification: 'd- элемент, металл'
 	},
 	Ga: {
 		num: 31,
@@ -212,15 +234,20 @@ const elements = {
 		color: 'Yellow',
 		weight: 74.9,
 		name: 'Мышьяк',
-		description: () => <div></div>
+		description: () => <div></div>,
+		earthMassFraction: '5 ∙ 10-4',
+		humanBodyMassFraction: '10-5',
+		classification: 'Токсикант, р- элемент, неметалл'
 	},
 	Se: {
 		num: 34,
 		color: 'Yellow',
 		weight: 79,
 		name: 'Селен',
-		description: () => <div></div>
-
+		description: () => <div></div>,
+		earthMassFraction: '6 ∙ 10-5',
+		humanBodyMassFraction: '10-5 - 10 - 7',
+		classification: 'р-элемент, неметалл'
 	},
 	Br: {
 		num: 35,
@@ -353,6 +380,13 @@ const elements = {
 		color: 'Red',
 		weight: 137.3,
 		name: 'Барий',
+
+		description: () => <div></div>,
+		earthMassFraction: '0,04',
+		humanBodyMassFraction: '10-5',
+		classification: `Микроэлементы, входящие в структуру и в активные
+		центры ферментов, необходимые для регулирования многих
+		биохимических реакций., s-элемент, металл`,
 	},
 	'La*': {
 		num: 57,

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Elements from '../data/Elements';
-import Cell from '../Cell';
 
 import './Modal.css';
 
@@ -12,36 +11,57 @@ function Modal(props) {
 	} = props;
 	console.log('Modal props = ', props);
 
-	const Description = Elements[clickedElement].description ||
+	const elementInfo = Elements[clickedElement];
+
+	const Description = elementInfo.description ||
 		(() => <div>Нет информации по этому элементу</div>);
 
-	console.log('Elements[clickedElement] = ', Elements[clickedElement]);
-	console.log('Elements[clickedElement].description = ', Elements[clickedElement].description);
-
+	console.log('Modal elementInfo = ', elementInfo);
 
 	return (
 		<div onClick={closeModal}>
 			<div className="popup__full_screen_div_opacity" />
 			<div className="popup__full_screen_div">
 				<div className="popup__window">
-					{/* <div>
-						<table>
-							<tbody>
-								<tr>
-									<td>
-										<Cell
-											setClickedElement={() => { }}
-											clickedElement={clickedElement}
-											elem={clickedElement}
-										/>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div> */}
-
-					<div className="popup__title">Информация:</div>
-
+					<h1>{elementInfo.name}</h1>
+					<div>
+						{elementInfo &&
+							<table>
+								<thead>
+									<tr>
+										<th className="modalTableHeader">
+											Символ элемента
+									</th>
+										<th className="modalTableHeader">
+											Массовая доля элемента в земной коре, %
+									</th>
+										<th className="modalTableHeader">
+											Массовая доля элемента в организме человека, %
+									</th>
+										<th className="modalTableHeader">
+											Признаки по классификации
+									</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td className="modalTableHeader">
+											{clickedElement}
+										</td>
+										<td className="modalTableHeader">
+											{elementInfo.earthMassFraction}
+										</td>
+										<td className="modalTableHeader">
+											{elementInfo.humanBodyMassFraction}
+										</td>
+										<td className="modalTableHeader">
+											{elementInfo.classification}
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						}
+					</div>
 
 					<div className="popup__list">
 						<Description />

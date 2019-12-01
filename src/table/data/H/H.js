@@ -4,7 +4,6 @@ import image1 from './image1.png'
 import image2 from './image2.png'
 const H = () => (
   <div>
-    <h1>Водород</h1>
     <div>
       {`
     Атом водорода самый легкий и простой по строению.
