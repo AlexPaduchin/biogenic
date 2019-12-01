@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/biogenic/static/css/main.792e7e58.chunk.css",
+    "main.css": "/biogenic/static/css/main.95c1a658.chunk.css",
     "main.js": "/biogenic/static/js/main.8cefd51f.chunk.js",
     "runtime-main.js": "/biogenic/static/js/runtime-main.126e0cd2.js",
     "static/js/2.6714eee9.chunk.js": "/biogenic/static/js/2.6714eee9.chunk.js",
     "index.html": "/biogenic/index.html",
-    "precache-manifest.71148082e5c5fbb9b77d29bbfb551c54.js": "/biogenic/precache-manifest.71148082e5c5fbb9b77d29bbfb551c54.js",
+    "precache-manifest.c1effc5ddf8db086c9a87bb62457bc02.js": "/biogenic/precache-manifest.c1effc5ddf8db086c9a87bb62457bc02.js",
     "service-worker.js": "/biogenic/service-worker.js",
     "static/media/image1.png": "/biogenic/static/media/image1.30d611e7.png",
     "static/media/image1C.png": "/biogenic/static/media/image1C.7fd289fd.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.126e0cd2.js",
     "static/js/2.6714eee9.chunk.js",
-    "static/css/main.792e7e58.chunk.css",
+    "static/css/main.95c1a658.chunk.css",
     "static/js/main.8cefd51f.chunk.js"
   ]
 }
