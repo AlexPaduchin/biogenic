@@ -46,7 +46,7 @@
 
 .popup__list {
   padding-top: 15px;
-  max-height: calc(100vh - 15rem);
+  max-height: calc(100vh - 10rem);
   overflow-y: scroll;
   align-items: flex-start;
   display: flex;
@@ -57,7 +57,7 @@
 
 @media screen and (min-height: 45rem) {
   .popup__list {
-    max-height: 25rem !important;
+    max-height: 30rem !important;
   }
 }
 
