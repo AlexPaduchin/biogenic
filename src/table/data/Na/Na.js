@@ -6,7 +6,7 @@ import imageNa3 from './imageNa3.png'
 import imageNa4 from './imageNa4.png'
 import imageNa5 from './imageNa5.png'
 
-const C = () => (
+const Na = () => (
   <div>
     <div>
       Натрий - химический элемент 3 периода  IА группы Периодической системы.
@@ -62,4 +62,4 @@ const C = () => (
   </div>
 );
 
-export default C;
+export default Na;

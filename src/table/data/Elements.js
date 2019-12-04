@@ -4,6 +4,7 @@ import H from './H/H';
 import C from './C/C';
 import N from './N/N';
 import Na from './Na/Na';
+import O from './O/O';
 
 const elements = {
 	H: {
@@ -67,7 +68,7 @@ const elements = {
 		color: 'Yellow',
 		weight: 15.9994,
 		name: 'Кислород',
-		description: () => <div></div>,
+		description: O,
 		earthMassFraction: '49',
 		humanBodyMassFraction: '67-75',
 		classification: 'Органоген, p-элемент, неметалл'
