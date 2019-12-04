@@ -3,6 +3,7 @@ import React from 'react';
 import H from './H/H';
 import C from './C/C';
 import N from './N/N';
+import Na from './Na/Na';
 
 const elements = {
 	H: {
@@ -89,7 +90,7 @@ const elements = {
 		color: 'Red',
 		weight: 22.9898,
 		name: 'Натрий',
-		description: () => <div></div>,
+		description: Na,
 		earthMassFraction: '2,6',
 		humanBodyMassFraction: '0,1',
 		classification: 's - элемент, создающий электролитную среду в крови, клеточных и межклеточных жидкостях, металл'
