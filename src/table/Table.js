@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 
 import Cell from './Cell';
 import Modal from './modal/Modal';
@@ -8,7 +8,9 @@ import './Table.css';
 const arr6 = [1, 2, 3, 4, 5, 6];
 
 function Table() {
-	const [clickedElement, setClickedElement] = useState('');
+	const [clickedElement, setClickedElement] = useState('*');
+
+	useEffect(() => setClickedElement(''), []);
 
 	const closeModal = useCallback(() => {
 		setClickedElement('');
@@ -17,12 +19,12 @@ function Table() {
 
 	const cellProps = {
 		clickedElement,
-		setClickedElement
+		setClickedElement,
 	};
 
 	return (
 		<div className="main">
-			{clickedElement ? (
+			{clickedElement && clickedElement !== '*' ? (
 				<Modal
 					clickedElement={clickedElement}
 					closeModal={closeModal}
