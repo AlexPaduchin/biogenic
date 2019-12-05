@@ -22,7 +22,7 @@ function Modal(props) {
 	console.log('Modal elementInfo = ', elementInfo);
 
 	return (
-		<div onClick={closeModal}>
+		<div>
 			<div className="popup__full_screen_div_opacity" />
 			<div className="popup__full_screen_div">
 				<div className="popup__window">
@@ -94,7 +94,7 @@ function Modal(props) {
 									Пройти тест
 								</button>
 							)}
-						<button className="modalButton">Вернуться к таблице</button>
+						<button className="modalButton" onClick={closeModal}>Вернуться к таблице</button>
 
 					</div>
 				</div>

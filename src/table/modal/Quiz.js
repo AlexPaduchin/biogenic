@@ -8,8 +8,15 @@ function Quiz(props) {
   const {
     clickedElement,
   } = props;
-  const [quizInProgress, setQuizInProgress] = useState(-1);
+  const [quizCheckboxes, setQuizCheckboxes] = useState([]);
 
+  const handleCheckboxClicked = (i) => {
+    const newQuizCheckboxes = quizCheckboxes.filter(elem => elem !== i);
+    if (newQuizCheckboxes.length === quizCheckboxes.length) {
+      newQuizCheckboxes.push(i);
+    }
+    setQuizCheckboxes(newQuizCheckboxes);
+  }
   console.log('Quiz props = ', props);
 
   const elementInfo = Elements[clickedElement];
@@ -20,8 +27,35 @@ function Quiz(props) {
   console.log('Quiz elementInfo = ', elementInfo);
 
   return (
-    <div className="quiz">
-      {elementInfo.test[0].map((item, index) => <div key={item.q}>{item.q()}</div>)}
+    <div>
+
+      <table className="quizBorderNone">
+        <thead>
+          <tr>
+            <th colSpan={3}>
+              <div className="quizTitle">Выберите одно или несколько утверждений, которые являются верными:</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {elementInfo.test[0].map((item, index) => (
+            <tr>
+              <td>
+                <div className="quizDispayInline">
+                  <button
+                    className={quizCheckboxes.find(check => check === index) === undefined ? "quizCheckboxOff" : "quizCheckboxOn"}
+                    onClick={() => handleCheckboxClicked(index)} />
+                </div>
+              </td>
+              <td className="quizWidth">
+                <div className="quizDispayInline">{index + 1}.</div>
+              </td>
+              <td><div className="quizDispayInlineText">{item.q()}</div></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
     </div>
   )
 }
