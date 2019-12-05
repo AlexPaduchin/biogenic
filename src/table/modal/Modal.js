@@ -1,5 +1,6 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 
+import Quiz from './Quiz';
 import Elements from '../data/Elements';
 
 import './Modal.css';
@@ -9,7 +10,7 @@ function Modal(props) {
 		clickedElement,
 		closeModal,
 	} = props;
-	const [quizProgress, setQuizProgress] = useState(-1);
+	const [quizInProgress, setQuizInProgress] = useState(false);
 
 	console.log('Modal props = ', props);
 
@@ -27,7 +28,7 @@ function Modal(props) {
 				<div className="popup__window">
 					<h1>{elementInfo.name}</h1>
 
-					{quizProgress === -1 ?
+					{quizInProgress === false ?
 						(
 							<div className="popup__list">
 								{elementInfo &&
@@ -71,27 +72,29 @@ function Modal(props) {
 								<Description />
 							</div>
 						) : (
-							<div>{`Тест № ${quizProgress + 1}`}</div>
+							<div>
+								<Quiz clickedElement={clickedElement} />
+							</div>
 						)}
 
 					<div className="modalButtonContainer">
-						{quizProgress === -1 ?
+						{quizInProgress ?
 							(
 								<button className="modalButton" onClick={(e) => {
 									e.stopPropagation();
-									setQuizProgress(0);
+									setQuizInProgress(false);
 								}}>
-									Пройти тест
-							</button>
+									Прекратить тест
+									</button>
 							) : (
 								<button className="modalButton" onClick={(e) => {
 									e.stopPropagation();
-									setQuizProgress(quizProgress + 1);
+									setQuizInProgress(true);
 								}}>
-									К следующему тесту
-									</button>
+									Пройти тест
+								</button>
 							)}
-						<button className="modalButton">Закрыть</button>
+						<button className="modalButton">Вернуться к таблице</button>
 
 					</div>
 				</div>

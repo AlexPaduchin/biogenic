@@ -102,3 +102,12 @@
   line-height: 1.2rem;
   padding: 0px 5px;
 }
+
+.quiz {
+  padding: 20px;
+}
+
+.quizItem {
+  font-size: 14px;
+  padding: 5px;
+}

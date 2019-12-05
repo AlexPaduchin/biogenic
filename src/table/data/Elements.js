@@ -1,6 +1,8 @@
 import React from 'react';
 
 import H from './H/H';
+import hTest from './H/hTest';
+
 import C from './C/C';
 import N from './N/N';
 import Na from './Na/Na';
@@ -15,7 +17,8 @@ const elements = {
 		description: H,
 		earthMassFraction: '1',
 		humanBodyMassFraction: '9.7',
-		classification: 'Органоген, s –элемент, неметалл'
+		classification: 'Органоген, s –элемент, неметалл',
+		test: hTest
 	},
 	He: {
 		color: 'Red',
