@@ -157,14 +157,14 @@ td {
   position: absolute;
   top: 0;
   left: 0;
-  box-shadow: 0px 0px 0px black, 0px 0px 0px black;
+  box-shadow: 0px 0px 0px white, 0px 0px 0px white;
 }
 
 .cellShadowActive {
   position: absolute;
-  top: -4px;
-  left: -4px;
-  box-shadow: 14px 14px 28px red, 3px 10px 10px red;
+  top: -6px;
+  left: -6px;
+  box-shadow: 14px 14px 28px black, 3px 10px 10px black;
   transition: all 2s;
 }
 
