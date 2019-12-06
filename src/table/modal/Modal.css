@@ -103,11 +103,29 @@
   padding: 0px 5px;
 }
 
+.quizTitleFalse,
+.quizTitleRight,
 .quizTitle {
   margin-top: 1.4rem;
   font-size: 1.2rem;
-  color: grey;
+  padding: 0.8rem;
 }
+
+.quizTitle {
+  background-color: #fedcae;
+  color: black;
+}
+
+.quizTitleFalse {
+  color: black;
+  background-color: #ee7637;
+}
+
+.quizTitleRight {
+  color: white;
+  background-color: green;
+}
+
 .quizFooter {
   margin-top: 0.6rem;
   font-size: 1.2rem;
@@ -159,11 +177,10 @@
   color: white;
   border-radius: 5px;
   margin-left: 1rem;
-  min-width: 7rem;
 }
 
 .quizLine {
-  background-color: #ee7637;
+  background-color: white;
   height: 2px;
   width: 100%;
   margin: 10px 0;
