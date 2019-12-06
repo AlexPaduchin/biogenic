@@ -9,7 +9,8 @@ const arr6 = [1, 2, 3, 4, 5, 6];
 
 function Table() {
 	const [clickedElement, setClickedElement] = useState('*');
-	useEffect(() => setClickedElement('H'), []);
+	const [, forceUpdate] = useState();
+	useEffect(() => setClickedElement(''), []);
 
 	const closeModal = useCallback(() => {
 		setClickedElement('');
@@ -34,7 +35,14 @@ function Table() {
 					<tbody>
 						<tr>
 							<th colSpan={13} className="titleColor">
-								<div className="titleClass">ПЕРИОДИЧЕСКАЯ СИСТЕМА ХИМИЧЕСКИХ ЭЛЕМЕНТОВ Д.И. МЕНДЕЛЕЕВА</div>
+								<div
+									onDoubleClick={() => {
+										localStorage.clear();
+										forceUpdate(String(new Date().getTime()));
+									}}
+									className="titleClass">
+									ПЕРИОДИЧЕСКАЯ СИСТЕМА ХИМИЧЕСКИХ ЭЛЕМЕНТОВ Д.И. МЕНДЕЛЕЕВА
+								</div>
 							</th>
 						</tr>
 

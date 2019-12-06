@@ -92,6 +92,7 @@
   box-shadow: black 0px 13px 26px 0px;
   margin-left: 1rem;
   min-width: 7rem;
+  cursor: pointer;
 }
 
 .modalTableHeader {
@@ -137,6 +138,7 @@
   font-size: 1.2rem;
   position: relative;
   height: 2rem;
+  cursor: pointer;
 }
 .colorOn {
   color: #3dadc1;
@@ -151,6 +153,7 @@
   left: 0.3rem;
   width: 1rem;
   height: 1rem;
+  cursor: pointer;
 }
 
 .quizCheckboxOff {
@@ -177,6 +180,7 @@
   color: white;
   border-radius: 5px;
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .quizLine {

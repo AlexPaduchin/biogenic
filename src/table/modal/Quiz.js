@@ -57,10 +57,11 @@ function Quiz(props) {
       {testArr[quizIndex].map((item, index) => {
         const isItemOff = quizCheckboxes.find(check => check === index) === undefined;
         return (
-          <div className={`quizItem ${(isItemOff ? 'colorOff' : 'colorOn')}`} key={String(index)}>
-            <button
-              className={isItemOff ? "quizCheckboxOff" : "quizCheckboxOn"}
-              onClick={() => handleCheckboxClicked(index)} />
+          <div
+            className={`quizItem ${(isItemOff ? 'colorOff' : 'colorOn')}`}
+            key={String(index)}
+            onClick={() => handleCheckboxClicked(index)} >
+            <button className={isItemOff ? "quizCheckboxOff" : "quizCheckboxOn"} />
             <div className="quizNumber">{index + 1}.</div>
             <div className="quizQuestion">{item.q()}</div>
           </div>
