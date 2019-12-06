@@ -103,15 +103,47 @@
   padding: 0px 5px;
 }
 
-.quizCellWidth {
-  width: 1rem;
-}
-
 .quizTitle {
+  margin-top: 2rem;
   font-size: 1.4rem;
   color: grey;
-  padding-right: 20px;
 }
+
+.quizItem {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  position: relative;
+  height: 2rem;
+}
+
+.quizCheckboxOff,
+.quizCheckboxOn {
+  position: absolute;
+  top: 0px;
+  left: 0.3rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.quizCheckboxOff {
+  background-color: grey;
+}
+.quizCheckboxOn {
+  background-color: greenyellow;
+}
+
+.quizNumber {
+  font-size: 1.4rem;
+}
+
+.quizQuestion {
+  position: absolute;
+  top: 0px;
+  left: 2rem;
+  height: 1rem;
+}
+
+/*
 
 .quizDispayInline {
   display: flex;
@@ -128,16 +160,4 @@
   font-size: 1.4rem;
 }
 
-.quizWidth,
-.quizCheckboxOff,
-.quizCheckboxOn {
-  width: 1rem;
-  height: 1rem;
-}
-
-.quizCheckboxOff {
-  background-color: grey;
-}
-.quizCheckboxOn {
-  background-color: greenyellow;
-}
+ */
