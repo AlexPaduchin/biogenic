@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8005f0eddab15eb89467d2d68d240eae",
+    "revision": "d8496427945312ce8ac1737373da91cf",
     "url": "/biogenic/index.html"
   },
   {
-    "revision": "85507627f2baf59c30d6",
+    "revision": "03ea933af5c396760251",
     "url": "/biogenic/static/css/main.3c7396e4.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/biogenic/static/js/2.7ae99d4a.chunk.js"
   },
   {
-    "revision": "85507627f2baf59c30d6",
-    "url": "/biogenic/static/js/main.02742158.chunk.js"
+    "revision": "03ea933af5c396760251",
+    "url": "/biogenic/static/js/main.e1010383.chunk.js"
   },
   {
     "revision": "83396f9bdbf72c483fb0",
