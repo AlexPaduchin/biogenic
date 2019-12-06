@@ -73,7 +73,7 @@ function Modal(props) {
 							</div>
 						) : (
 							<div>
-								<Quiz clickedElement={clickedElement} />
+								<Quiz clickedElement={clickedElement} closeModal={closeModal} />
 							</div>
 						)}
 

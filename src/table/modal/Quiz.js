@@ -3,16 +3,16 @@ import React, { useState } from 'react';
 import Elements from '../data/Elements';
 
 import './Modal.css';
-import { nullLiteral } from '@babel/types';
 
 function Quiz(props) {
   const {
     clickedElement,
+    closeModal
   } = props;
   const [quizCheckboxes, setQuizCheckboxes] = useState([]);
   const [quizIndex, setQuizIndex] = useState(0);
-
   const [resultChecking, setResultChecking] = useState(undefined);
+  const [summary, setSummary] = useState(undefined);
 
   const handleCheckboxClicked = (i) => {
     const newQuizCheckboxes = quizCheckboxes.filter(elem => elem !== i);
@@ -45,6 +45,12 @@ function Quiz(props) {
     default: titleMessage = null;
       break;
   }
+
+  const newSummary = summary === undefined ? resultChecking : (summary && resultChecking);
+  if (newSummary === false) {
+    localStorage.setItem(clickedElement, JSON.stringify(newSummary));
+  }
+
   return (
     <div>
       {titleMessage}
@@ -82,8 +88,17 @@ function Quiz(props) {
           <button
             className="quizButton"
             onClick={() => {
+              if (quizIndex + 1 < testArr.length) {
+                setQuizIndex(quizIndex + 1);
+                setQuizCheckboxes([]);
+                setResultChecking(undefined);
+                setSummary(newSummary);
+              } else {
+                localStorage.setItem(clickedElement, JSON.stringify(newSummary));
+                closeModal();
+              }
             }}>
-            {(quizIndex + 1 < testArr.length) ? 'Перейти к следующему тесту' : 'Завершить тест'}
+            {(quizIndex + 1 < testArr.length) ? 'Перейти к следующему тесту' : 'Завершить тест и сохранить результат'}
           </button>
         )}
 

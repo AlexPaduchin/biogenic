@@ -10,9 +10,24 @@ const Cell = ({
 }) => {
 	const elemInfo = Elements[elem] || {};
 	const color = elemInfo.color ? ' bColor' + elemInfo.color : '';
-	const isActiveClass = elemInfo.description === undefined
-		? 'cellShadowNormal'
-		: (clickedElement === '' ? 'cellShadowActive' : 'cellShadowNormal');
+	let isActiveClass;
+	if (elemInfo.description === undefined) {
+		isActiveClass = "cellShadowNormal"
+	} else {
+		if (clickedElement === '') {
+			switch (localStorage.getItem(elem)) {
+				case undefined: isActiveClass = 'cellShadowActiveBlack'; break;
+				case 'true': isActiveClass = 'cellShadowActiveGreen'; break;
+				case 'false': isActiveClass = 'cellShadowActiveRed'; break;
+				default: isActiveClass = 'cellShadowActiveBlack'; break;
+			}
+			console.log('elem = ', elem)
+			console.log('isActiveClass = ', isActiveClass)
+		} else {
+			isActiveClass = "cellShadowNormal"
+		}
+	}
+
 	return (
 		<div
 			className="relativePosition"
