@@ -45,15 +45,26 @@ function Quiz(props) {
       })}
       <div className="quizFooter">
         {`Тест № ${quizIndex + 1} ( Всего тестов: ${testArr.length} )`}
-        <button
+        {quizCheckboxes.length > 0 &&
+          <button
+            className="quizButton"
+            onClick={() => {
+              const newQuizIndex = (quizIndex + 1 < testArr.length) ? quizIndex + 1 : 0;
+              setQuizIndex(newQuizIndex);
+            }}>
+            Проверить ответы
+          </button>
+        }
+
+        {/* <button
           className="quizButton"
           onClick={() => {
-            const newQuizIndex = (quizIndex + 1 < testArr.length) ? quizIndex + 1 : 0;
-            setQuizIndex(newQuizIndex);
           }}>
-          Проверить ответы
-          </button>
+          {(quizIndex + 1 < testArr.length) ? 'Перейти к следующему тесту' : 'Завершить тест'}
+        </button> */}
+
       </div>
+      <div className="quizLine"></div>
     </div >
   )
 }

@@ -155,9 +155,16 @@
 
 .quizButton {
   padding: 10px;
-  background-color: light;
-  color: black;
+  background-color: #3dadc1;
+  color: white;
   border-radius: 5px;
   margin-left: 1rem;
   min-width: 7rem;
+}
+
+.quizLine {
+  background-color: #ee7637;
+  height: 2px;
+  width: 100%;
+  margin: 10px 0;
 }
