@@ -31,16 +31,19 @@ function Quiz(props) {
     <div>
       <div className="quizTitle">Выберите одно или несколько утверждений, которые являются верными:</div>
 
-      {testArr[quizIndex].map((item, index) => (
-        <div className="quizItem" key={String(index)}>
-          <button
-            className={quizCheckboxes.find(check => check === index) === undefined ? "quizCheckboxOff" : "quizCheckboxOn"}
-            onClick={() => handleCheckboxClicked(index)} />
-          <div className="quizNumber">{index + 1}.</div>
-          <div className="quizQuestion">{item.q()}</div>
-        </div>
-      ))}
-      <div className="quizTitle">
+      {testArr[quizIndex].map((item, index) => {
+        const isItemOff = quizCheckboxes.find(check => check === index) === undefined;
+        return (
+          <div className={`quizItem ${(isItemOff ? 'colorOff' : 'colorOn')}`} key={String(index)}>
+            <button
+              className={isItemOff ? "quizCheckboxOff" : "quizCheckboxOn"}
+              onClick={() => handleCheckboxClicked(index)} />
+            <div className="quizNumber">{index + 1}.</div>
+            <div className="quizQuestion">{item.q()}</div>
+          </div>
+        );
+      })}
+      <div className="quizFooter">
         {`Тест № ${quizIndex + 1} ( Всего тестов: ${testArr.length} )`}
         <button
           className="quizButton"
