@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 
 import Elements from '../data/Elements';
 
@@ -9,6 +9,7 @@ function Quiz(props) {
     clickedElement,
   } = props;
   const [quizCheckboxes, setQuizCheckboxes] = useState([]);
+  const [quizIndex, setQuizIndex] = useState(0);
 
   const handleCheckboxClicked = (i) => {
     const newQuizCheckboxes = quizCheckboxes.filter(elem => elem !== i);
@@ -25,14 +26,13 @@ function Quiz(props) {
     return <div>Извините. Тесты для этого элемента еще не подготовлены.</div>
   }
   console.log('Quiz elementInfo = ', elementInfo);
-
+  const testArr = elementInfo.test
   return (
     <div>
-
       <div className="quizTitle">Выберите одно или несколько утверждений, которые являются верными:</div>
 
-      {elementInfo.test[0].map((item, index) => (
-        <div className="quizItem">
+      {testArr[quizIndex].map((item, index) => (
+        <div className="quizItem" key={String(index)}>
           <button
             className={quizCheckboxes.find(check => check === index) === undefined ? "quizCheckboxOff" : "quizCheckboxOn"}
             onClick={() => handleCheckboxClicked(index)} />
@@ -40,6 +40,17 @@ function Quiz(props) {
           <div className="quizQuestion">{item.q()}</div>
         </div>
       ))}
+      <div className="quizTitle">
+        {`Тест № ${quizIndex + 1} ( Всего тестов: ${testArr.length} )`}
+        <button
+          className="quizButton"
+          onClick={() => {
+            const newQuizIndex = (quizIndex + 1 < testArr.length) ? quizIndex + 1 : 0;
+            setQuizIndex(newQuizIndex);
+          }}>
+          Проверить ответы
+          </button>
+      </div>
     </div >
   )
 }

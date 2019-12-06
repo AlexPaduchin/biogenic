@@ -143,6 +143,15 @@
   height: 1rem;
 }
 
+.quizButton {
+  padding: 10px;
+  background-color: light;
+  color: black;
+  border-radius: 5px;
+  margin-left: 1rem;
+  min-width: 7rem;
+}
+
 /*
 
 .quizDispayInline {
