@@ -4,7 +4,10 @@ import H from './H/H';
 import hTest from './H/hTest';
 
 import C from './C/C';
+
 import N from './N/N';
+import nTest from './N/nTest';
+
 import Na from './Na/Na';
 import O from './O/O';
 
@@ -65,6 +68,7 @@ const elements = {
 		earthMassFraction: '0,02',
 		humanBodyMassFraction: '3,1',
 		classification: 'Органоген, p-элемент, неметалл',
+		test: nTest
 	},
 	O: {
 		num: 8,
