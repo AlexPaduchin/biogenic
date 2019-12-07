@@ -115,6 +115,7 @@
 .quizTitle {
   background-color: #fedcae;
   color: black;
+  position: relative;
 }
 
 .quizTitleFalse {
@@ -175,11 +176,13 @@
 }
 
 .quizButton {
+  position: absolute;
   padding: 10px;
   background-color: #3dadc1;
   color: white;
   border-radius: 5px;
-  margin-left: 1rem;
+  top: 0.3rem;
+  left: 20rem;
   cursor: pointer;
 }
 

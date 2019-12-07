@@ -7,7 +7,7 @@ import './Table.css';
 
 const arr6 = [1, 2, 3, 4, 5, 6];
 
-function Table() {
+function Table({ elements }) {
 	const [clickedElement, setClickedElement] = useState('*');
 	const [, forceUpdate] = useState();
 	useEffect(() => setClickedElement(''), []);
@@ -20,6 +20,7 @@ function Table() {
 	const cellProps = {
 		clickedElement,
 		setClickedElement,
+		elements,
 	};
 
 	return (
@@ -28,6 +29,7 @@ function Table() {
 				<Modal
 					clickedElement={clickedElement}
 					closeModal={closeModal}
+					elements={elements}
 				/>
 			) : null}
 			<div className="mainDiv">

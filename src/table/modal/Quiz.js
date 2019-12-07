@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 
-import Elements from '../data/Elements';
-
 import './Modal.css';
 
 function Quiz(props) {
   const {
     clickedElement,
-    closeModal
+    closeModal,
+    elements
   } = props;
   const [quizCheckboxes, setQuizCheckboxes] = useState([]);
   const [quizIndex, setQuizIndex] = useState(0);
@@ -24,7 +23,7 @@ function Quiz(props) {
   console.log('Quiz props = ', props);
   console.log('Quiz resultChecking = ', resultChecking);
 
-  const elementInfo = Elements[clickedElement];
+  const elementInfo = elements[clickedElement];
 
   if (!elementInfo || !elementInfo.test) {
     return <div>Извините. Тесты для этого элемента еще не подготовлены.</div>

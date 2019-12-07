@@ -1,14 +1,13 @@
 import React from 'react';
 import './Table.css';
 
-import Elements from './data/Elements';
-
 const Cell = ({
 	elem,
 	setClickedElement,
 	clickedElement,
+	elements
 }) => {
-	const elemInfo = Elements[elem] || {};
+	const elemInfo = elements[elem] || {};
 	const color = elemInfo.color ? ' bColor' + elemInfo.color : '';
 	let isActiveClass;
 	if (elemInfo.description === undefined) {
@@ -21,12 +20,16 @@ const Cell = ({
 				case 'false': isActiveClass = 'cellShadowActiveRed'; break;
 				default: isActiveClass = 'cellShadowActiveBlack'; break;
 			}
-			console.log('elem = ', elem)
-			console.log('isActiveClass = ', isActiveClass)
+			// console.log('elem = ', elem)
+			// console.log('isActiveClass = ', isActiveClass)
 		} else {
 			isActiveClass = "cellShadowNormal"
 		}
 	}
+
+	// console.log('Cell elem = ', elem)
+	// console.log('Cell elemInfo = ', elemInfo)
+
 
 	return (
 		<div

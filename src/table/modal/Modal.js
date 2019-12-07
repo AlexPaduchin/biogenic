@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import Quiz from './Quiz';
-import Elements from '../data/Elements';
 
 import './Modal.css';
 
@@ -9,12 +8,13 @@ function Modal(props) {
 	const {
 		clickedElement,
 		closeModal,
+		elements,
 	} = props;
 	const [quizInProgress, setQuizInProgress] = useState(false);
 
 	console.log('Modal props = ', props);
 
-	const elementInfo = Elements[clickedElement];
+	const elementInfo = elements[clickedElement];
 
 	const Description = elementInfo.description ||
 		(() => <div>Нет информации по этому элементу</div>);
@@ -73,7 +73,7 @@ function Modal(props) {
 							</div>
 						) : (
 							<div>
-								<Quiz clickedElement={clickedElement} closeModal={closeModal} />
+								<Quiz clickedElement={clickedElement} closeModal={closeModal} elements={elements} />
 							</div>
 						)}
 
