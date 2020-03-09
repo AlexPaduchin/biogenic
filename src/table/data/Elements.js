@@ -4,6 +4,7 @@ import H from './H/H';
 import hTest from './H/hTest';
 
 import C from './C/C';
+import I from './I/I';
 
 import N from './N/N';
 import nTest from './N/nTest';
@@ -382,7 +383,10 @@ const elements = {
 		color: 'Yellow',
 		weight: 126.9,
 		name: 'Йод',
-	},
+		description: I,
+		earthMassFraction: '3 ∙ 10-4',
+		humanBodyMassFraction: '10-5',
+		classification: 'Токсикант, d- элемент, неметалл'	},
 	Xe: {
 		num: 54,
 		color: 'Yellow',
