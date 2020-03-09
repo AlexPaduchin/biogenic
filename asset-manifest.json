@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/biogenic/static/css/main.dca3cbce.chunk.css",
-    "main.js": "/biogenic/static/js/main.cf3df937.chunk.js",
+    "main.js": "/biogenic/static/js/main.a196291e.chunk.js",
     "runtime-main.js": "/biogenic/static/js/runtime-main.3733aba9.js",
-    "static/js/2.5d8e7e2a.chunk.js": "/biogenic/static/js/2.5d8e7e2a.chunk.js",
+    "static/js/2.c86c9e21.chunk.js": "/biogenic/static/js/2.c86c9e21.chunk.js",
     "index.html": "/biogenic/index.html",
-    "precache-manifest.7dbc49dcfb57faf59fe9fd375155b5c8.js": "/biogenic/precache-manifest.7dbc49dcfb57faf59fe9fd375155b5c8.js",
+    "precache-manifest.e95f36db08149eade1f356d534e10452.js": "/biogenic/precache-manifest.e95f36db08149eade1f356d534e10452.js",
     "service-worker.js": "/biogenic/service-worker.js",
-    "static/js/2.5d8e7e2a.chunk.js.LICENSE.txt": "/biogenic/static/js/2.5d8e7e2a.chunk.js.LICENSE.txt",
+    "static/js/2.c86c9e21.chunk.js.LICENSE.txt": "/biogenic/static/js/2.c86c9e21.chunk.js.LICENSE.txt",
     "static/media/Cr1.png": "/biogenic/static/media/Cr1.619b66c9.png",
     "static/media/Cr2.png": "/biogenic/static/media/Cr2.58e4d7e7.png",
     "static/media/Cr3.png": "/biogenic/static/media/Cr3.ce461dc5.png",
@@ -24,6 +24,16 @@
     "static/media/Mo2.png": "/biogenic/static/media/Mo2.0298cd07.png",
     "static/media/Mo3.png": "/biogenic/static/media/Mo3.7e950b84.png",
     "static/media/Mo4.png": "/biogenic/static/media/Mo4.6c637cdf.png",
+    "static/media/P10.png": "/biogenic/static/media/P10.265e7148.png",
+    "static/media/P12.png": "/biogenic/static/media/P12.9df444a8.png",
+    "static/media/P2.png": "/biogenic/static/media/P2.e9ede51b.png",
+    "static/media/P3.png": "/biogenic/static/media/P3.470edd20.png",
+    "static/media/P4.png": "/biogenic/static/media/P4.b50ffa1e.png",
+    "static/media/P5.png": "/biogenic/static/media/P5.c505a899.png",
+    "static/media/P6.png": "/biogenic/static/media/P6.3500b396.png",
+    "static/media/P7.png": "/biogenic/static/media/P7.773c7364.png",
+    "static/media/P8.png": "/biogenic/static/media/P8.c31e8f29.png",
+    "static/media/P9.png": "/biogenic/static/media/P9.20ec4979.png",
     "static/media/image1.png": "/biogenic/static/media/image1.30d611e7.png",
     "static/media/image1C.png": "/biogenic/static/media/image1C.7fd289fd.png",
     "static/media/image2.png": "/biogenic/static/media/image2.3b807dd1.png",
@@ -44,8 +54,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3733aba9.js",
-    "static/js/2.5d8e7e2a.chunk.js",
+    "static/js/2.c86c9e21.chunk.js",
     "static/css/main.dca3cbce.chunk.css",
-    "static/js/main.cf3df937.chunk.js"
+    "static/js/main.a196291e.chunk.js"
   ]
 }
