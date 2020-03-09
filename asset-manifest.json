@@ -1,12 +1,29 @@
 {
   "files": {
-    "main.css": "/biogenic/static/css/main.143949da.chunk.css",
-    "main.js": "/biogenic/static/js/main.0bea18e7.chunk.js",
-    "runtime-main.js": "/biogenic/static/js/runtime-main.126e0cd2.js",
-    "static/js/2.3dc452b3.chunk.js": "/biogenic/static/js/2.3dc452b3.chunk.js",
+    "main.css": "/biogenic/static/css/main.dca3cbce.chunk.css",
+    "main.js": "/biogenic/static/js/main.cf3df937.chunk.js",
+    "runtime-main.js": "/biogenic/static/js/runtime-main.3733aba9.js",
+    "static/js/2.5d8e7e2a.chunk.js": "/biogenic/static/js/2.5d8e7e2a.chunk.js",
     "index.html": "/biogenic/index.html",
-    "precache-manifest.4b229f64803b7d5ec2c68add03e48b19.js": "/biogenic/precache-manifest.4b229f64803b7d5ec2c68add03e48b19.js",
+    "precache-manifest.7dbc49dcfb57faf59fe9fd375155b5c8.js": "/biogenic/precache-manifest.7dbc49dcfb57faf59fe9fd375155b5c8.js",
     "service-worker.js": "/biogenic/service-worker.js",
+    "static/js/2.5d8e7e2a.chunk.js.LICENSE.txt": "/biogenic/static/js/2.5d8e7e2a.chunk.js.LICENSE.txt",
+    "static/media/Cr1.png": "/biogenic/static/media/Cr1.619b66c9.png",
+    "static/media/Cr2.png": "/biogenic/static/media/Cr2.58e4d7e7.png",
+    "static/media/Cr3.png": "/biogenic/static/media/Cr3.ce461dc5.png",
+    "static/media/Cr4.png": "/biogenic/static/media/Cr4.89ba9b76.png",
+    "static/media/I1.png": "/biogenic/static/media/I1.6b983a76.png",
+    "static/media/I2.png": "/biogenic/static/media/I2.bd19af2e.png",
+    "static/media/I3.png": "/biogenic/static/media/I3.4ff2b2dc.png",
+    "static/media/I4.png": "/biogenic/static/media/I4.ced40447.png",
+    "static/media/I5.png": "/biogenic/static/media/I5.d377a76d.png",
+    "static/media/I6.png": "/biogenic/static/media/I6.8870784b.png",
+    "static/media/I7.png": "/biogenic/static/media/I7.1a64dd4f.png",
+    "static/media/I8.png": "/biogenic/static/media/I8.b6347b1b.png",
+    "static/media/Mo1.png": "/biogenic/static/media/Mo1.b6519d25.png",
+    "static/media/Mo2.png": "/biogenic/static/media/Mo2.0298cd07.png",
+    "static/media/Mo3.png": "/biogenic/static/media/Mo3.7e950b84.png",
+    "static/media/Mo4.png": "/biogenic/static/media/Mo4.6c637cdf.png",
     "static/media/image1.png": "/biogenic/static/media/image1.30d611e7.png",
     "static/media/image1C.png": "/biogenic/static/media/image1C.7fd289fd.png",
     "static/media/image2.png": "/biogenic/static/media/image2.3b807dd1.png",
@@ -26,9 +43,9 @@
     "static/media/imageO2.png": "/biogenic/static/media/imageO2.426b3f13.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.126e0cd2.js",
-    "static/js/2.3dc452b3.chunk.js",
-    "static/css/main.143949da.chunk.css",
-    "static/js/main.0bea18e7.chunk.js"
+    "static/js/runtime-main.3733aba9.js",
+    "static/js/2.5d8e7e2a.chunk.js",
+    "static/css/main.dca3cbce.chunk.css",
+    "static/js/main.cf3df937.chunk.js"
   ]
 }
