@@ -11,6 +11,7 @@ import nTest from './N/nTest';
 
 import Na from './Na/Na';
 import Mo from './Mo/Mo';
+import P from './P/P';
 import Cr from './Cr/Cr';
 
 import O from './O/O';
@@ -130,6 +131,10 @@ const elements = {
 		color: 'Yellow',
 		weight: 30.9738,
 		name: 'Фосфор',
+		description: P,
+		earthMassFraction: '2,6',
+		humanBodyMassFraction: '0,1',
+		classification: 's - элемент, создающий электролитную среду в крови, клеточных и межклеточных жидкостях, металл'
 	},
 	S: {
 		num: 16,
