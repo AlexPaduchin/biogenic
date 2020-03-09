@@ -9,6 +9,8 @@ import N from './N/N';
 import nTest from './N/nTest';
 
 import Na from './Na/Na';
+import Mo from './Mo/Mo';
+
 import O from './O/O';
 
 const elements = {
@@ -305,6 +307,10 @@ const elements = {
 		color: 'Green',
 		weight: 95.9,
 		name: 'Молибден',
+		description: Mo,
+		earthMassFraction: '3 ∙ 10-4',
+		humanBodyMassFraction: '10-5',
+		classification: 'Токсикант, d- элемент, металл'
 	},
 	Tc: {
 		num: 43,
