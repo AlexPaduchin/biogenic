@@ -10,6 +10,7 @@ import nTest from './N/nTest';
 
 import Na from './Na/Na';
 import Mo from './Mo/Mo';
+import Cr from './Cr/Cr';
 
 import O from './O/O';
 
@@ -183,6 +184,10 @@ const elements = {
 		color: 'Green',
 		weight: 51.996,
 		name: 'Хром',
+		description: Cr,
+		earthMassFraction: '3 ∙ 10-4',
+		humanBodyMassFraction: '10-6',
+		classification: 'Токсикант, d- элемент, металл'
 	},
 	Mn: {
 		num: 25,
