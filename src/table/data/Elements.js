@@ -132,9 +132,9 @@ const elements = {
 		weight: 30.9738,
 		name: 'Фосфор',
 		description: P,
-		earthMassFraction: '2,6',
-		humanBodyMassFraction: '0,1',
-		classification: 's - элемент, создающий электролитную среду в крови, клеточных и межклеточных жидкостях, металл'
+		earthMassFraction: '0.1',
+		humanBodyMassFraction: '1',
+		classification: 'органоген, р-элемент, неметалл'
 	},
 	S: {
 		num: 16,
@@ -191,9 +191,9 @@ const elements = {
 		weight: 51.996,
 		name: 'Хром',
 		description: Cr,
-		earthMassFraction: '3 ∙ 10-4',
-		humanBodyMassFraction: '10-6',
-		classification: 'Токсикант, d- элемент, металл'
+		earthMassFraction: '9,3 ∙ 10-3',
+		humanBodyMassFraction: '0.0000024',
+		classification: 'd- элемент, металл, активно принимают участие в метаболизме, микроэлементы'
 	},
 	Mn: {
 		num: 25,
@@ -319,9 +319,9 @@ const elements = {
 		weight: 95.9,
 		name: 'Молибден',
 		description: Mo,
-		earthMassFraction: '3 ∙ 10-4',
-		humanBodyMassFraction: '10-5',
-		classification: 'Токсикант, d- элемент, металл'
+		earthMassFraction: '0,0003',
+		humanBodyMassFraction: '0.000013',
+		classification: 'd- элемент, металл, «металлы жизни», активно принимают участие в метаболизме'
 	},
 	Tc: {
 		num: 43,
@@ -389,9 +389,10 @@ const elements = {
 		weight: 126.9,
 		name: 'Йод',
 		description: I,
-		earthMassFraction: '3 ∙ 10-4',
-		humanBodyMassFraction: '10-5',
-		classification: 'Токсикант, d- элемент, неметалл'	},
+		earthMassFraction: '5 ∙ 10-4',
+		humanBodyMassFraction: '0.000016',
+		classification: 'р-элемент, неметалл, жизненно необходимый (незаменимый) – входит в состав гормонов'
+	},
 	Xe: {
 		num: 54,
 		color: 'Yellow',
