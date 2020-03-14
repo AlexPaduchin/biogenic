@@ -3,6 +3,7 @@ import React from 'react';
 import H from './H/H';
 import hTest from './H/hTest';
 import feTest from './Fe/feTest';
+import znTest from './Zn/znTest';
 
 import C from './C/C';
 import I from './I/I';
@@ -15,6 +16,7 @@ import Mo from './Mo/Mo';
 import P from './P/P';
 import Cr from './Cr/Cr';
 import Fe from './Fe/Fe';
+import Zn from './Zn/Zn';
 
 import O from './O/O';
 
@@ -239,10 +241,11 @@ const elements = {
 		color: 'Green',
 		weight: 65.39,
 		name: 'Цинк',
-		description: () => <div></div>,
+		description: Zn,
 		earthMassFraction: '5 ∙ 10-3',
 		humanBodyMassFraction: '1∙10-3',
-		classification: 'd- элемент, металл'
+		classification: 'd- элемент, металл',
+		test: znTest
 	},
 	Ga: {
 		num: 31,
