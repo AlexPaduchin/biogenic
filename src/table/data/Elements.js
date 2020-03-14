@@ -4,6 +4,7 @@ import H from './H/H';
 import hTest from './H/hTest';
 import feTest from './Fe/feTest';
 import znTest from './Zn/znTest';
+import seTest from './Se/seTest';
 
 import C from './C/C';
 import I from './I/I';
@@ -17,6 +18,7 @@ import P from './P/P';
 import Cr from './Cr/Cr';
 import Fe from './Fe/Fe';
 import Zn from './Zn/Zn';
+import Se from './Se/Se';
 
 import O from './O/O';
 
@@ -274,10 +276,11 @@ const elements = {
 		color: 'Yellow',
 		weight: 79,
 		name: 'Селен',
-		description: () => <div></div>,
+		description: Se,
 		earthMassFraction: '6 ∙ 10-5',
 		humanBodyMassFraction: '10-5 - 10 - 7',
-		classification: 'р-элемент, неметалл'
+		classification: 'р-элемент, неметалл',
+		test: seTest,
 	},
 	Br: {
 		num: 35,
