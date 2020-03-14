@@ -2,6 +2,7 @@ import React from 'react';
 
 import H from './H/H';
 import hTest from './H/hTest';
+import feTest from './Fe/feTest';
 
 import C from './C/C';
 import I from './I/I';
@@ -13,6 +14,7 @@ import Na from './Na/Na';
 import Mo from './Mo/Mo';
 import P from './P/P';
 import Cr from './Cr/Cr';
+import Fe from './Fe/Fe';
 
 import O from './O/O';
 
@@ -206,11 +208,14 @@ const elements = {
 		color: 'Green',
 		weight: 55.847,
 		name: 'Железо',
-		description: () => <div></div>,
+		description: Fe,
 		earthMassFraction: '5',
 		humanBodyMassFraction: '0,01',
-		classification: 'Микроэлемент, d-элемент, входящий в структуру белка гемоглобина и в активные центры ферментов, необходимые для регулирования многих биохимических реакций, металл'
+		classification: `Микроэлемент, d-элемент, входящий в структуру белка гемоглобина и в активные центры ферментов, необходимые для регулирования многих
+		биохимических реакций, металл`,
+		test: feTest
 	},
+
 	Co: {
 		num: 27,
 		color: 'Green',
