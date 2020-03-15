@@ -5,12 +5,13 @@ import hTest from './H/hTest';
 import feTest from './Fe/feTest';
 import znTest from './Zn/znTest';
 import seTest from './Se/seTest';
+import nTest from './N/nTest';
+import mnTest from './Mn/mnTest';
 
 import C from './C/C';
 import I from './I/I';
 
 import N from './N/N';
-import nTest from './N/nTest';
 
 import Na from './Na/Na';
 import Mo from './Mo/Mo';
@@ -19,6 +20,7 @@ import Cr from './Cr/Cr';
 import Fe from './Fe/Fe';
 import Zn from './Zn/Zn';
 import Se from './Se/Se';
+import Mn from './Mn/Mn';
 
 import O from './O/O';
 
@@ -206,6 +208,11 @@ const elements = {
 		color: 'Green',
 		weight: 54.938,
 		name: 'Марганец',
+		description: Mn,
+		earthMassFraction: '0,12',
+		humanBodyMassFraction: '0.000017',
+		classification: 'd- элемент, металл, «металлы жизни», активно принимают участие в метаболизме, микроэлементы',
+		test: mnTest,
 	},
 	Fe: {
 		num: 26,
