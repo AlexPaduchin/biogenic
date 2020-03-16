@@ -7,6 +7,7 @@ import znTest from './Zn/znTest';
 import seTest from './Se/seTest';
 import nTest from './N/nTest';
 import mnTest from './Mn/mnTest';
+import iTest from './I/iTest';
 
 import C from './C/C';
 import I from './I/I';
@@ -409,7 +410,8 @@ const elements = {
 		description: I,
 		earthMassFraction: '5 ∙ 10-4',
 		humanBodyMassFraction: '0.000016',
-		classification: 'р-элемент, неметалл, жизненно необходимый (незаменимый) – входит в состав гормонов'
+		classification: 'р-элемент, неметалл, жизненно необходимый (незаменимый) – входит в состав гормонов',
+		test: iTest
 	},
 	Xe: {
 		num: 54,
