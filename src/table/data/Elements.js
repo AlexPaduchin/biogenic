@@ -8,6 +8,7 @@ import seTest from './Se/seTest';
 import nTest from './N/nTest';
 import mnTest from './Mn/mnTest';
 import iTest from './I/iTest';
+import pTest from './P/pTest';
 
 import C from './C/C';
 import I from './I/I';
@@ -143,7 +144,8 @@ const elements = {
 		description: P,
 		earthMassFraction: '0.1',
 		humanBodyMassFraction: '1',
-		classification: 'органоген, р-элемент, неметалл'
+		classification: 'органоген, р-элемент, неметалл',
+		test: pTest
 	},
 	S: {
 		num: 16,
